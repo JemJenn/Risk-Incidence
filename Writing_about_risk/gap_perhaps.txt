@@ -1,0 +1,27 @@
+The literature dealing with Residual Risk has been developed in most cases with a set of restrictive assumptions. While some attempts to 
+address these have been made [], modern risk estimates are still based on unrealistic models of disease transmission dynamics and
+demographic considerations. Given the wealth of data which has been accumulated in the decades since [date/paper of first transfusion of HIV
+the time to address these issues are long overdue. As is noted in every publication on Residual Risk, Residual Risk is important for monitoring the success of existing blood safety measures as well as for assessing the 
+cost-effectiveness of prospective blood safety measures.
+
+A key assumption that has remained unchallenged approximates ZERO probability of donor co-infection with multiple diseases. A wealth of literature
+exists to debunk the validity of this assumption, and the first section of our work will assess the impact this has on RR estimates.
+
+The next section will deal in more detail with the question of inter-subject variability in "realised test window periods".
+
+Other question:
+We know something about Viral Load and Transmissibility through sex - from ART adherence studies. ?
+Can we then infer something about the transmissibility vs viral load through blood?
+E.g. assume [P(transmission | ~ NAT VL threshold transmissibility via sex] / [P (~ some reference VL transmissibility via sex)] = [P(NAT VL threshold via transfusion)] / [P(some reference VL via transfusion)]
+
+
+
+Do we know ANYTHING about the distribution of the virus in the body at various disease states/stages? Eg is it more in the genitals
+when VL is high, and sits dormant in the rest of the bloodstream otherwise? How well do actual data reflect the incidence/window period model? (starting point?)
+
+
+
+Random question:
+How unlikely is it that some super-adherent people do in fact wipe out HIV, but never know because they are super adherent?
+I think Alex said something about the locations in the body that ART's reach isn't the same as the locations in which
+dorman HIV stays.
