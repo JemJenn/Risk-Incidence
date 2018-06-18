@@ -117,6 +117,7 @@ family_negative_likelihood_weibul <- function(times, scale, shape, mean_delay, s
   return(set_of_negative_curves)
 }
 
+
 family_positive_likelihood_weibul <- function(times, scale, shape, mean_delay, sd_size, n, test_time){
   list_of_positions = generate_positions_cumulative_normal(n=n, mean_center_position=mean_delay, sd_size=sd_size)
   set_of_positive_curves <- matrix(nrow=length(times),ncol=n)
