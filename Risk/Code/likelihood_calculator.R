@@ -417,6 +417,56 @@ plot_individual_time_likelihood = function(n,times,set_of_positive_curves,set_of
 
 
 ##                    SCRIPT
+# Now we are going towards risk estimation
+# So we define the quick transition from non-infectious to infectious, and the probability of detection (the 'sensitivity' of the test), both with Weibul distributions
+
+n = 15
+
+detail <- 10
+timeaxis <- seq(0,90,1/detail)
+
+shape_infect <- 1
+scale_infect <- 5
+mean_delay_infect <- 7
+population_sd_infect <- 10
+
+shape_detect <- 5
+scale_detect <- 5
+mean_delay_detect <- mean_delay_infect + 14
+population_sd_detect <- population_sd_infect
+
+donation_time <- 77
+
+# now we generate and plot the curves
+
+infectious_curves <- family_positive_likelihood_weibul(times = timeaxis, shape = shape_infect, scale = scale_infect, mean_delay = mean_delay_infect, sd_size = population_sd_infect, n = n, test_time = donation_time)
+undetected_curves <- family_negative_likelihood_weibul(times = timeaxis, shape = shape_detect, scale = scale_detect, mean_delay = mean_delay_detect, sd_size = population_sd_detect, n = n, test_time = donation_time)
+
+# now we calculate the 
+
+
+# need to think about whether there is any difference between defining that everyone waits two weeks from infectious to detectable,but the total delay is distributed, and defining that the infectiousness
+# infectiousness aand detectability as distributed, using the same distribution and different means (delta is two weeks). No difference in the non-mixed case, but say we want to 
+# allow the time between infectiousness and detectability to vary. In that case it is more transparent to define a bunch of infectiousness times and delay-between-infectiousness-and-detectability-times,
+# then calculate detectability times accordingly. That way we can change the map from 1 - 1 to 1 - many.... Defining them conditionally seeeems to make more sense but I'm not sure.
+
+# anyway that shouldn't take me too long, so I can start with that tonight.
+# next on the list is to check the old figures with some mixing included. (imperfect correlation). ALSO, check that zero correlation is what they say it is....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #  Figure 1
 ################
 # : produce a family of sensitivity curves and their average
